@@ -2,7 +2,7 @@
 
 
 def read_file():
-    with open("Day1/data.txt") as f:
+    with open("2023/Day1/data.txt") as f:
         lines = f.read().splitlines()
     return lines
 

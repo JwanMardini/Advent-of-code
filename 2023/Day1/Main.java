@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 public class Main {
 
-    private static final String FILE_PATH = "Day1/data.txt";
+    private static final String FILE_PATH = "2023/Day1/data.txt";
     private static final Map<String, String> TEXT_TO_NUM = new HashMap<>();
 
     static {

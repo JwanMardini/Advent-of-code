@@ -40,7 +40,7 @@ def find_sum_of_gear_ratios(schematic):
     return gear_ratios_sum
 
 # Read the schematic from the file
-with open('Day3/data.txt') as f:
+with open('2023/Day3/data.txt') as f:
     schematic = f.read().splitlines()
 
 # Calculate the sum of gear ratios

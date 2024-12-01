@@ -1,4 +1,4 @@
-FILE_PATH = "Day1/data.txt"
+FILE_PATH = "2023/Day1/data.txt"
 result = 0
 with open(FILE_PATH, "r") as file:
     for line in file:

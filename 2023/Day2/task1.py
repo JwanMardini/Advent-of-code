@@ -1,7 +1,7 @@
 RED = 12
 GREEN = 13
 BLUE = 14
-FILE_PATH = "Day2/data.txt"
+FILE_PATH = "2023/Day2/data.txt"
 
 
 def parse_game_data(file_path):

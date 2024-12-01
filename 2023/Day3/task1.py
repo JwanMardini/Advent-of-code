@@ -37,7 +37,7 @@ def find_sum_of_part_numbers(schematic):
     return part_numbers_sum
 
 # Read the schematic from the file
-with open('Day3/data.txt') as f:
+with open('2023/Day3/data.txt') as f:
     schematic = f.read().splitlines()
 
 

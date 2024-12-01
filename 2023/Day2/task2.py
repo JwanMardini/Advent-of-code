@@ -74,7 +74,7 @@ def calculate_power_of_set(cubes):
 
 
 # Main execution
-file_path = "Day2/data.txt"
+file_path = "2023/Day2/data.txt"
 games_from_file = read_games_from_file(file_path)
 
 # Calculate the minimum set of cubes for each game and their power
