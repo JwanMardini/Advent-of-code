@@ -1,6 +1,7 @@
 import re
 
-REGEX = r"mul[(]\d+,\d+[)]"
+REGEX_TASK1 = r"mul[(]\d+,\d+[)]"
+REGEX_TASK2 = r"mul\(\d+,\d+\)|don't\(\)|do\(\)"
 
 
 def read_input():
@@ -16,14 +17,36 @@ def multiply(data):
     return int(left_side) * int(right_side)
 
 
-def main():
-    data = read_input()
+def task1(data):
     sum = 0
     for line in data:
-        list_of_mul = re.findall(REGEX, line)
+        list_of_mul = re.findall(REGEX_TASK1, line)
         for mul in list_of_mul:
             sum += multiply(mul)
-    print(sum)
+    return sum
+
+
+def task2(data):
+    total = 0
+    enable_mul = True
+    for line in data:
+        list_of_matches = re.findall(REGEX_TASK2, line)
+        for match in list_of_matches:
+            if match == "don't()":
+                enable_mul = False
+            elif match == "do()":
+                enable_mul = True
+            elif enable_mul:
+                total += multiply(match)
+    return total
+
+
+def main():
+    data = read_input()
+    # task_1 = task1(data)
+    # print(task_1)
+    task_2 = task2(data)
+    print(task_2)
 
 
 if __name__ == "__main__":
